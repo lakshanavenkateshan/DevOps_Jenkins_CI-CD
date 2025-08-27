@@ -50,6 +50,7 @@ aws-cicd-jenkins-sonarqube-nexus-tomcat/
 ├── Jenkinsfile # Declarative pipeline definition
 
 ├── scripts/
+
 │ └── deploy.sh # Script to deploy WAR to Tomcat
 
 ├── docs/ # Architecture diagram + screenshots
