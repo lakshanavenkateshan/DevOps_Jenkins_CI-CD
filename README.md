@@ -18,6 +18,7 @@ The setup uses **5 AWS EC2 instances**, each dedicated to one major tool:
 - **Maven + Git** → Build & SCM  
 
 All integrated into a Jenkins pipeline with **5 stages**:
+
 Clone → SonarQube Scan → Build → Nexus Upload → Deploy to Tomcat
 ---
 
@@ -43,21 +44,33 @@ Clone → SonarQube Scan → Build → Nexus Upload → Deploy to Tomcat
 ---
 
 ## Repository Structure
+
 aws-cicd-jenkins-sonarqube-nexus-tomcat/
+
 ├── Jenkinsfile # Declarative pipeline definition
+
 ├── scripts/
 │ └── deploy.sh # Script to deploy WAR to Tomcat
-├── docs/ # Architecture diagram + screenshots
-│ ├── architecture.png
-│ ├── jenkins.png
-│ ├── sonarqube.png
-│ ├── nexus.png
-│ └── tomcat.png
-├── pom.xml # Maven config for sample app
-├── src/ # Application source code (Java)
-├── .gitignore
-└── README.md
 
+├── docs/ # Architecture diagram + screenshots
+
+│ ├── architecture.png
+
+│ ├── jenkins.png
+
+│ ├── sonarqube.png
+
+│ ├── nexus.png
+
+│ └── tomcat.png
+
+├── pom.xml # Maven config for sample app
+
+├── src/ # Application source code (Java)
+
+├── .gitignore
+
+└── README.md
 
 ---
 
